@@ -1,0 +1,21 @@
+|testbench
+
+
+|testbench|Mux_81:UUT
+in[0] => Mux0.IN7
+in[1] => Mux0.IN6
+in[2] => Mux0.IN5
+in[3] => Mux0.IN4
+in[4] => ~NO_FANOUT~
+in[5] => ~NO_FANOUT~
+in[6] => ~NO_FANOUT~
+in[7] => ~NO_FANOUT~
+select[0] => Mux0.IN10
+select[0] => Mux1.IN10
+select[1] => Mux0.IN9
+select[1] => Mux1.IN9
+select[2] => Mux0.IN8
+select[2] => Mux1.IN8
+out <= out$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

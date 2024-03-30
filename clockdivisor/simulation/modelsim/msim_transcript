@@ -1,0 +1,59 @@
+# Reading pref.tcl
+# do clockdivisor_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor {C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:10:52 on Mar 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor" C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor.v 
+# -- Compiling module clkdivisor
+# 
+# Top level modules:
+# 	clkdivisor
+# End time: 22:10:52 on Mar 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor {C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:10:52 on Mar 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor" C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v 
+# -- Compiling module clkdivisor_tb
+# 
+# Top level modules:
+# 	clkdivisor_tb
+# End time: 22:10:52 on Mar 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.clkdivisor_tb
+# vsim work.clkdivisor_tb 
+# Start time: 22:10:54 on Mar 29,2024
+# Loading work.clkdivisor_tb
+# Loading work.clkdivisor
+add wave -position insertpoint  \
+sim:/clkdivisor_tb/clk \
+sim:/clkdivisor_tb/END \
+sim:/clkdivisor_tb/Dclk \
+sim:/clkdivisor_tb/count
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: noklon  Hostname: CLONY  ProcessID: 1984
+#           Attempting to use alternate WLF file "./wlft9kb5yt".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft9kb5yt
+run
+run
+run
+run
+run
+run
+run
+# ** Note: $finish    : C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v(18)
+#    Time: 610 ps  Iteration: 0  Instance: /clkdivisor_tb
+# End time: 22:11:11 on Mar 29,2024, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 2

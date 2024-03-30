@@ -1,0 +1,17 @@
+module counter4bit_tb;
+
+reg clk;
+reg reset;
+wire [3:0] count;
+
+counter4bit uut(.clk(clk), .reset(reset), .count(count));
+
+always begin
+	clk = ~clk; #5
+end
+
+initial begin
+    reset = 1;
+    #10 reset = 0;
+    #50 $finish;
+end

@@ -1,0 +1,10 @@
+module clkdivisor_tb;
+reg clk;
+wire Q;
+
+clkdivisor uut(.clk(clk));
+
+initial begin
+clk = 1;
+$finish;
+endmodule;

@@ -1,0 +1,63 @@
+# Reading pref.tcl
+# do Decoder1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/decoder {C:/intelFPGA_lite/20.1/quartus/bin64/Projects/decoder/decoder_24.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:54:01 on Mar 27,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/decoder" C:/intelFPGA_lite/20.1/quartus/bin64/Projects/decoder/decoder_24.v 
+# -- Compiling module decoder_24
+# 
+# Top level modules:
+# 	decoder_24
+# End time: 17:54:02 on Mar 27,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/decoder {C:/intelFPGA_lite/20.1/quartus/bin64/Projects/decoder/decoder_24_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:54:02 on Mar 27,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/decoder" C:/intelFPGA_lite/20.1/quartus/bin64/Projects/decoder/decoder_24_tb.v 
+# -- Compiling module decoder_24_tb
+# 
+# Top level modules:
+# 	decoder_24_tb
+# End time: 17:54:02 on Mar 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.decoder_24_tb
+# vsim work.decoder_24_tb 
+# Start time: 17:54:05 on Mar 27,2024
+# Loading work.decoder_24_tb
+# Loading work.decoder_24
+add wave -position insertpoint  \
+{sim:/decoder_24_tb/in[1]} \
+{sim:/decoder_24_tb/in[0]} \
+{sim:/decoder_24_tb/out[3]} \
+{sim:/decoder_24_tb/out[2]} \
+{sim:/decoder_24_tb/out[1]} \
+{sim:/decoder_24_tb/out[0]}
+run
+# ** Note: $finish    : C:/intelFPGA_lite/20.1/quartus/bin64/Projects/decoder/decoder_24_tb.v(22)
+#    Time: 40 ps  Iteration: 0  Instance: /decoder_24_tb
+# 1
+# Break in Module decoder_24_tb at C:/intelFPGA_lite/20.1/quartus/bin64/Projects/decoder/decoder_24_tb.v line 22
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/decoder_24_tb/in \
+{sim:/decoder_24_tb/in[1]} \
+{sim:/decoder_24_tb/in[0]} \
+sim:/decoder_24_tb/out \
+{sim:/decoder_24_tb/out[3]} \
+{sim:/decoder_24_tb/out[2]} \
+{sim:/decoder_24_tb/out[1]} \
+{sim:/decoder_24_tb/out[0]}
+# End time: 17:59:09 on Mar 27,2024, Elapsed time: 0:05:04
+# Errors: 0, Warnings: 0

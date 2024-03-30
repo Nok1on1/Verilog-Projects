@@ -1,0 +1,6 @@
+module clkdivisor( input clk, input D, output reg Q);
+
+
+
+always clk = ~clk;
+endmodule
