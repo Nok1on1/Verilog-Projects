@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Projects/3bitcounter/simulation/modelsim
+vcounter3bit
+!s110 1712093576
+!i10b 1
+!s100 0Eo`d_J6l1][lEWZgXQVP1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I8S3W:c7>?KE8JLhR5FHW:2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1712093557
+8C:/Projects/3bitcounter/counter3bit.v
+FC:/Projects/3bitcounter/counter3bit.v
+!i122 0
+L0 1 28
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1712093576.000000
+!s107 C:/Projects/3bitcounter/counter3bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Projects/3bitcounter|C:/Projects/3bitcounter/counter3bit.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Projects/3bitcounter
+Z7 tCvgOpt 0
+vcounter3bit_tb
+!s110 1712093577
+!i10b 1
+!s100 aBNkKdEBDJoTlVS7I_VVV2
+R1
+IQ?U]2mW`>7Tdfzz`IB47R0
+R2
+R0
+w1712093523
+8C:/Projects/3bitcounter/counter3bit_tb.v
+FC:/Projects/3bitcounter/counter3bit_tb.v
+!i122 1
+L0 1 36
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Projects/3bitcounter/counter3bit_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Projects/3bitcounter|C:/Projects/3bitcounter/counter3bit_tb.v|
+!i113 1
+R5
+R6
+R7

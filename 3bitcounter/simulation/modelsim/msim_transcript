@@ -1,0 +1,58 @@
+# Reading pref.tcl
+# do 3bitcounter_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Projects/3bitcounter {C:/Projects/3bitcounter/counter3bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:32:56 on Apr 03,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/3bitcounter" C:/Projects/3bitcounter/counter3bit.v 
+# -- Compiling module counter3bit
+# 
+# Top level modules:
+# 	counter3bit
+# End time: 01:32:56 on Apr 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Projects/3bitcounter {C:/Projects/3bitcounter/counter3bit_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:32:56 on Apr 03,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/3bitcounter" C:/Projects/3bitcounter/counter3bit_tb.v 
+# -- Compiling module counter3bit_tb
+# 
+# Top level modules:
+# 	counter3bit_tb
+# End time: 01:32:57 on Apr 03,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim work.counter3bit_tb
+# vsim work.counter3bit_tb 
+# Start time: 01:33:06 on Apr 03,2024
+# Loading work.counter3bit_tb
+# Loading work.counter3bit
+add wave -position insertpoint  \
+sim:/counter3bit_tb/clk \
+sim:/counter3bit_tb/reset \
+sim:/counter3bit_tb/set \
+sim:/counter3bit_tb/load \
+sim:/counter3bit_tb/count
+run
+# ** Note: $stop    : C:/Projects/3bitcounter/counter3bit_tb.v(33)
+#    Time: 70 ps  Iteration: 0  Instance: /counter3bit_tb
+# Break in Module counter3bit_tb at C:/Projects/3bitcounter/counter3bit_tb.v line 33
+run
+# ** Note: $stop    : C:/Projects/3bitcounter/counter3bit_tb.v(33)
+#    Time: 140 ps  Iteration: 0  Instance: /counter3bit_tb
+# Break in Module counter3bit_tb at C:/Projects/3bitcounter/counter3bit_tb.v line 33
+run
+# ** Note: $stop    : C:/Projects/3bitcounter/counter3bit_tb.v(33)
+#    Time: 210 ps  Iteration: 0  Instance: /counter3bit_tb
+# Break in Module counter3bit_tb at C:/Projects/3bitcounter/counter3bit_tb.v line 33
+# End time: 01:35:29 on Apr 03,2024, Elapsed time: 0:02:23
+# Errors: 0, Warnings: 0

@@ -1,0 +1,5 @@
+module ROM_tb;
+	reg [2:0] address;
+	reg sel;
+	wire [7:0] data;
+ROM uut(.address(address), .sel(sel), .data(data))

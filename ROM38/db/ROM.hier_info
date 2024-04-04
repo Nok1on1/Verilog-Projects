@@ -1,0 +1,26 @@
+|ROM_tb
+
+
+|ROM_tb|ROM:uut
+address[0] => Decoder0.IN2
+address[0] => Decoder1.IN1
+address[1] => Decoder0.IN1
+address[2] => Decoder0.IN0
+address[2] => Decoder1.IN0
+sel => data.OUTPUTSELECT
+sel => data.OUTPUTSELECT
+sel => data.OUTPUTSELECT
+sel => data.OUTPUTSELECT
+sel => data.OUTPUTSELECT
+sel => data.OUTPUTSELECT
+sel => data[0].DATAIN
+data[0] <= sel.DB_MAX_OUTPUT_PORT_TYPE
+data[1] <= data.DB_MAX_OUTPUT_PORT_TYPE
+data[2] <= <GND>
+data[3] <= data.DB_MAX_OUTPUT_PORT_TYPE
+data[4] <= data.DB_MAX_OUTPUT_PORT_TYPE
+data[5] <= data.DB_MAX_OUTPUT_PORT_TYPE
+data[6] <= data.DB_MAX_OUTPUT_PORT_TYPE
+data[7] <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+

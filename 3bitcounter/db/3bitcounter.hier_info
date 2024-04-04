@@ -1,0 +1,24 @@
+|counter3bit_tb
+
+
+|counter3bit_tb|counter3bit:dut
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+reset => count[0]~reg0.ACLR
+reset => count[1]~reg0.ACLR
+reset => count[2]~reg0.ACLR
+set => count.OUTPUTSELECT
+set => count.OUTPUTSELECT
+set => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => next_count[0].LATCH_ENABLE
+load => next_count[1].LATCH_ENABLE
+load => next_count[2].LATCH_ENABLE
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
