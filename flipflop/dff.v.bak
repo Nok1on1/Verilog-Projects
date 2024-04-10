@@ -1,0 +1,8 @@
+module dff(D, clk, set, Q);
+	input D, clk, set;
+	output reg Q;
+	
+	always @(posedge clk)
+		if(~set) Q<= 1'b1;
+		else 		Q<= D;
+endmodule

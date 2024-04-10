@@ -170,4 +170,6 @@ module baseline_c5gx(
 
 );
 
+counter3bit dut(.clk(SW[9]), .reset(KEY[0]), .set(SW[0]), .load(SW[1]), .count(LEDR[2:0]));
+
 endmodule

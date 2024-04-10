@@ -1,0 +1,3 @@
+module register(clk, write_enable, addrA, addrB, addrC, data_out_A, data_out_B, data_out_C)
+	input clk, write_enable, addrA, addrB, addrC;
+	output reg [31:0] data_out_A, data_out_B, data_out_C;

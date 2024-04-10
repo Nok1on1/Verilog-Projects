@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at counter8bit.v(3): always construct contains both blocking and non-blocking assignments File: C:/Verilog-Projects/midterm4/counter8bit.v Line: 3

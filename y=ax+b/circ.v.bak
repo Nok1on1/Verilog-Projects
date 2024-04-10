@@ -1,0 +1,4 @@
+module circ(input clk, input [3:0] x, a, b, output wire [3:0] y);
+
+always @(posedge clk) y <= a*x+b;
+endmodule

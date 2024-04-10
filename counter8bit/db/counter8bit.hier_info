@@ -1,0 +1,30 @@
+|tb
+
+
+|tb|counter8bit:uut
+clk => value[0]~reg0.CLK
+clk => value[1]~reg0.CLK
+clk => value[2]~reg0.CLK
+clk => value[3]~reg0.CLK
+clk => value[4]~reg0.CLK
+clk => value[5]~reg0.CLK
+clk => value[6]~reg0.CLK
+clk => value[7]~reg0.CLK
+rst => value[0]~reg0.ACLR
+rst => value[1]~reg0.ACLR
+rst => value[2]~reg0.ACLR
+rst => value[3]~reg0.ACLR
+rst => value[4]~reg0.ACLR
+rst => value[5]~reg0.ACLR
+rst => value[6]~reg0.ACLR
+rst => value[7]~reg0.ACLR
+value[0] <= value[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[1] <= value[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[2] <= value[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[3] <= value[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[4] <= value[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[5] <= value[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[6] <= value[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+value[7] <= value[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,9 @@
+|tb
+
+
+|tb|D_latch:uut
+D => Q$latch.DATAIN
+E => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

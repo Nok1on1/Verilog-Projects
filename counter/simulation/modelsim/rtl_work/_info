@@ -8,52 +8,52 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter/simulation/modelsim
+Z0 dC:/Verilog-Projects/counter/simulation/modelsim
 vcounter4bit
-Z1 !s110 1711581053
+Z1 !s110 1712578353
 !i10b 1
-!s100 ?Hm1<JJa=<VEA8L?IJ@EA1
+!s100 Y9PGUhgXQa<ggMa4LQX0_0
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I:hIJFVZofMZTL=ILbDzn80
+IN@4N6aTGJQLCPO`=f9a@S0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1711579697
-8C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter/counter4bit.v
-FC:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter/counter4bit.v
+w1712577748
+8C:/Verilog-Projects/counter/counter4bit.v
+FC:/Verilog-Projects/counter/counter4bit.v
 !i122 0
-L0 1 18
+L0 1 14
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1711581053.000000
-!s107 C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter/counter4bit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter|C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter/counter4bit.v|
+!s108 1712578352.000000
+!s107 C:/Verilog-Projects/counter/counter4bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Verilog-Projects/counter|C:/Verilog-Projects/counter/counter4bit.v|
 !i113 1
-Z6 o-vlog01compat -work work
-Z7 !s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter
-Z8 tCvgOpt 0
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Verilog-Projects/counter
+Z7 tCvgOpt 0
 vcounter4bit_tb
 R1
 !i10b 1
-!s100 X;O>AaDE<b645LnlBZ6bl2
+!s100 5;AVKZidkigeFgT7FG8<h3
 R2
-I@3e`=Y4]^D9oOQ]DX0<_k0
+IzaXX@6lNR`h_lmCWgU>Ej3
 R3
 R0
-w1711580155
-8C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter/counter4bit_tb.v
-FC:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter/counter4bit_tb.v
+w1712578333
+8C:/Verilog-Projects/counter/counter4bit_tb.v
+FC:/Verilog-Projects/counter/counter4bit_tb.v
 !i122 1
-L0 1 20
+L0 1 21
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter/counter4bit_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter|C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter/counter4bit_tb.v|
+!s108 1712578353.000000
+!s107 C:/Verilog-Projects/counter/counter4bit_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Verilog-Projects/counter|C:/Verilog-Projects/counter/counter4bit_tb.v|
 !i113 1
+R5
 R6
 R7
-R8

@@ -1,0 +1,51 @@
+# Reading pref.tcl
+# do 8bitadder_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/8bitadder {C:/Verilog-Projects/8bitadder/adder8bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:23:55 on Apr 09,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Verilog-Projects/8bitadder" C:/Verilog-Projects/8bitadder/adder8bit.v 
+# -- Compiling module fulladder1
+# -- Compiling module adder8bit
+# 
+# Top level modules:
+# 	adder8bit
+# End time: 00:23:55 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/8bitadder {C:/Verilog-Projects/8bitadder/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:23:55 on Apr 09,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Verilog-Projects/8bitadder" C:/Verilog-Projects/8bitadder/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 00:23:55 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.tb
+# vsim work.tb 
+# Start time: 00:24:06 on Apr 09,2024
+# Loading work.tb
+# Loading work.adder8bit
+# Loading work.fulladder1
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: C:/Verilog-Projects/8bitadder/adder8bit.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/n1 File: C:/Verilog-Projects/8bitadder/adder8bit.v Line: 9
+add wave -position insertpoint  \
+sim:/tb/a \
+sim:/tb/b \
+sim:/tb/c \
+sim:/tb/cout
+run
+run
+# End time: 00:24:28 on Apr 09,2024, Elapsed time: 0:00:22
+# Errors: 0, Warnings: 1

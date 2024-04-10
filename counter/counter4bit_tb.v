@@ -14,6 +14,7 @@ initial begin
 	 reset = 0;
 	 #1 reset = 1;
 	 #100 reset = 0;
+	 #1 reset = 1;
     #200 $finish;
 end
 

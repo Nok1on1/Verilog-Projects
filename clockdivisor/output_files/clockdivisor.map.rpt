@@ -1,5 +1,5 @@
 Analysis & Elaboration report for clockdivisor
-Fri Mar 29 22:10:43 2024
+Tue Apr 09 19:42:55 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Fri Mar 29 22:10:43 2024       ;
+; Analysis & Elaboration Status ; Successful - Tue Apr 09 19:42:55 2024       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; clockdivisor                                ;
 ; Top-level Entity Name         ; clkdivisor_tb                               ;
@@ -161,7 +161,6 @@ https://fpgasoftware.intel.com/eula.
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
-; END  ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; Dclk ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
@@ -172,60 +171,25 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Mar 29 22:10:36 2024
+    Info: Processing started: Tue Apr 09 19:42:50 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off clockdivisor -c clockdivisor --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file baseline_c5gx.v
-    Info (12023): Found entity 1: baseline_c5gx File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/baseline_c5gx.v Line: 38
+    Info (12023): Found entity 1: baseline_c5gx File: C:/Verilog-Projects/clockdivisor/baseline_c5gx.v Line: 38
 Info (12021): Found 1 design units, including 1 entities, in source file clkdivisor.v
-    Info (12023): Found entity 1: clkdivisor File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor.v Line: 1
+    Info (12023): Found entity 1: clkdivisor File: C:/Verilog-Projects/clockdivisor/clkdivisor.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clkdivisor_tb.v
-    Info (12023): Found entity 1: clkdivisor_tb File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 1
+    Info (12023): Found entity 1: clkdivisor_tb File: C:/Verilog-Projects/clockdivisor/clkdivisor_tb.v Line: 1
 Info (12127): Elaborating entity "clkdivisor_tb" for the top level hierarchy
-Warning (10175): Verilog HDL warning at clkdivisor_tb.v(18): ignoring unsupported system task File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 18
-Warning (10240): Verilog HDL Always Construct warning at clkdivisor_tb.v(17): inferring latch(es) for variable "clk", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 17
-Warning (10240): Verilog HDL Always Construct warning at clkdivisor_tb.v(17): inferring latch(es) for variable "count", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 17
-Warning (10240): Verilog HDL Always Construct warning at clkdivisor_tb.v(17): inferring latch(es) for variable "END", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 17
-Info (10041): Inferred latch for "END" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[0]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[1]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[2]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[3]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[4]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[5]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[6]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[7]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[8]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[9]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[10]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[11]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[12]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[13]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[14]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[15]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[16]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[17]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[18]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[19]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[20]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[21]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[22]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[23]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[24]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[25]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[26]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[27]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[28]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[29]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[30]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "count[31]" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (10041): Inferred latch for "clk" at clkdivisor_tb.v(20) File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 20
-Info (12128): Elaborating entity "clkdivisor" for hierarchy "clkdivisor:uut" File: C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v Line: 7
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 552 megabytes
-    Info: Processing ended: Fri Mar 29 22:10:43 2024
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:01
+Warning (10755): Verilog HDL warning at clkdivisor_tb.v(9): assignments to clk create a combinational loop File: C:/Verilog-Projects/clockdivisor/clkdivisor_tb.v Line: 9
+Info (12128): Elaborating entity "clkdivisor" for hierarchy "clkdivisor:uut" File: C:/Verilog-Projects/clockdivisor/clkdivisor_tb.v Line: 5
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Verilog-Projects/clockdivisor/clkdivisor_tb.v Line: 2
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4769 megabytes
+    Info: Processing ended: Tue Apr 09 19:42:55 2024
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
 
 

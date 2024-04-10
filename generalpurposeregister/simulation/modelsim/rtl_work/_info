@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Verilog-Projects/generalpurposeregister/simulation/modelsim
+vregister
+Z1 !s110 1712502899
+!i10b 1
+!s100 ZTX?h^i3ZNY]07DERK_km0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+In1fA_QVlz3zUWBWVTm`D^3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1712502718
+8C:/Verilog-Projects/generalpurposeregister/register.v
+FC:/Verilog-Projects/generalpurposeregister/register.v
+!i122 0
+L0 1 43
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1712502899.000000
+!s107 C:/Verilog-Projects/generalpurposeregister/register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Verilog-Projects/generalpurposeregister|C:/Verilog-Projects/generalpurposeregister/register.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Verilog-Projects/generalpurposeregister
+Z8 tCvgOpt 0
+vregister_tb
+R1
+!i10b 1
+!s100 V]55GH^e_EBKzn=VhS[Xk3
+R2
+IR>7Hn8MUI5BOMe[@IfM3Y0
+R3
+R0
+w1712502886
+8C:/Verilog-Projects/generalpurposeregister/register_tb.v
+FC:/Verilog-Projects/generalpurposeregister/register_tb.v
+!i122 1
+L0 1 95
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Verilog-Projects/generalpurposeregister/register_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Verilog-Projects/generalpurposeregister|C:/Verilog-Projects/generalpurposeregister/register_tb.v|
+!i113 1
+R6
+R7
+R8

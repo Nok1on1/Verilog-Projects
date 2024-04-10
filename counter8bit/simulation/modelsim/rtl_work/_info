@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Verilog-Projects/counter8bit/simulation/modelsim
+vcounter8bit
+Z1 !s110 1712698347
+!i10b 1
+!s100 _YNl4DBOL_LB:J6RViJm`2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ic]X_FH9nEkGFc;CCY8SZR1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1712698333
+8C:/Verilog-Projects/counter8bit/counter8bit.v
+FC:/Verilog-Projects/counter8bit/counter8bit.v
+!i122 0
+L0 1 11
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1712698347.000000
+!s107 C:/Verilog-Projects/counter8bit/counter8bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Verilog-Projects/counter8bit|C:/Verilog-Projects/counter8bit/counter8bit.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Verilog-Projects/counter8bit
+Z8 tCvgOpt 0
+vtb
+R1
+!i10b 1
+!s100 g4:OK^M9:WhFa;Z>2[LKK1
+R2
+Ime<F?fN1A0iKj^oG`H<CJ1
+R3
+R0
+w1712698044
+8C:/Verilog-Projects/counter8bit/tb.v
+FC:/Verilog-Projects/counter8bit/tb.v
+!i122 1
+L0 1 17
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Verilog-Projects/counter8bit/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Verilog-Projects/counter8bit|C:/Verilog-Projects/counter8bit/tb.v|
+!i113 1
+R6
+R7
+R8

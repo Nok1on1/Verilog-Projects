@@ -1,0 +1,60 @@
+# Reading pref.tcl
+# do register_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/generalpurposeregister {C:/Verilog-Projects/generalpurposeregister/register.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:14:59 on Apr 07,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Verilog-Projects/generalpurposeregister" C:/Verilog-Projects/generalpurposeregister/register.v 
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# End time: 19:14:59 on Apr 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/generalpurposeregister {C:/Verilog-Projects/generalpurposeregister/register_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:14:59 on Apr 07,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Verilog-Projects/generalpurposeregister" C:/Verilog-Projects/generalpurposeregister/register_tb.v 
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	register_tb
+# End time: 19:14:59 on Apr 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.register_tb
+# vsim work.register_tb 
+# Start time: 19:15:16 on Apr 07,2024
+# Loading work.register_tb
+# Loading work.register
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (8) for port 'selectW1'. The port definition is at: C:/Verilog-Projects/generalpurposeregister/register.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /register_tb/dut File: C:/Verilog-Projects/generalpurposeregister/register_tb.v Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (8) for port 'selectR1'. The port definition is at: C:/Verilog-Projects/generalpurposeregister/register.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /register_tb/dut File: C:/Verilog-Projects/generalpurposeregister/register_tb.v Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (8) for port 'selectR2'. The port definition is at: C:/Verilog-Projects/generalpurposeregister/register.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /register_tb/dut File: C:/Verilog-Projects/generalpurposeregister/register_tb.v Line: 13
+add wave -position insertpoint  \
+sim:/register_tb/clk \
+sim:/register_tb/EN \
+sim:/register_tb/rst \
+sim:/register_tb/read \
+sim:/register_tb/write \
+sim:/register_tb/selectW1 \
+sim:/register_tb/selectR1 \
+sim:/register_tb/selectR2 \
+sim:/register_tb/addr \
+sim:/register_tb/outA \
+sim:/register_tb/outB
+run
+run
+run
+run

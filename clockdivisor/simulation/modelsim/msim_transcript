@@ -1,4 +1,5 @@
 # Reading pref.tcl
+# ERROR: No extended dataflow license exists
 # do clockdivisor_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -10,42 +11,40 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor {C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor.v}
+# vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/clockdivisor {C:/Verilog-Projects/clockdivisor/clkdivisor.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:10:52 on Mar 29,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor" C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor.v 
+# Start time: 19:43:00 on Apr 09,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Verilog-Projects/clockdivisor" C:/Verilog-Projects/clockdivisor/clkdivisor.v 
 # -- Compiling module clkdivisor
 # 
 # Top level modules:
 # 	clkdivisor
-# End time: 22:10:52 on Mar 29,2024, Elapsed time: 0:00:00
+# End time: 19:43:00 on Apr 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor {C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/clockdivisor {C:/Verilog-Projects/clockdivisor/clkdivisor_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:10:52 on Mar 29,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor" C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v 
+# Start time: 19:43:00 on Apr 09,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Verilog-Projects/clockdivisor" C:/Verilog-Projects/clockdivisor/clkdivisor_tb.v 
 # -- Compiling module clkdivisor_tb
 # 
 # Top level modules:
 # 	clkdivisor_tb
-# End time: 22:10:52 on Mar 29,2024, Elapsed time: 0:00:00
+# End time: 19:43:00 on Apr 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.clkdivisor_tb
 # vsim work.clkdivisor_tb 
-# Start time: 22:10:54 on Mar 29,2024
+# Start time: 19:43:06 on Apr 09,2024
 # Loading work.clkdivisor_tb
 # Loading work.clkdivisor
 add wave -position insertpoint  \
 sim:/clkdivisor_tb/clk \
-sim:/clkdivisor_tb/END \
-sim:/clkdivisor_tb/Dclk \
-sim:/clkdivisor_tb/count
+sim:/clkdivisor_tb/Dclk
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: noklon  Hostname: CLONY  ProcessID: 1984
-#           Attempting to use alternate WLF file "./wlft9kb5yt".
+#           Attempting to use alternate WLF file "./wlftf6cjb6".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft9kb5yt
+#           Using alternate file: ./wlftf6cjb6
 run
 run
 run
@@ -53,7 +52,18 @@ run
 run
 run
 run
-# ** Note: $finish    : C:/intelFPGA_lite/20.1/quartus/bin64/Projects/clockdivisor/clkdivisor_tb.v(18)
-#    Time: 610 ps  Iteration: 0  Instance: /clkdivisor_tb
-# End time: 22:11:11 on Mar 29,2024, Elapsed time: 0:00:17
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 19:48:20 on Apr 09,2024, Elapsed time: 0:05:14
 # Errors: 0, Warnings: 2

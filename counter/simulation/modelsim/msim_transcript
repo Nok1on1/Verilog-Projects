@@ -1,5 +1,4 @@
 # Reading pref.tcl
-# ERROR: No extended dataflow license exists
 # do counter_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -11,31 +10,43 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter {C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter/counter4bit.v}
+# vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/counter {C:/Verilog-Projects/counter/counter4bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 03:10:53 on Mar 28,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter" C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter/counter4bit.v 
+# Start time: 16:12:32 on Apr 08,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Verilog-Projects/counter" C:/Verilog-Projects/counter/counter4bit.v 
 # -- Compiling module counter4bit
 # 
 # Top level modules:
 # 	counter4bit
-# End time: 03:10:53 on Mar 28,2024, Elapsed time: 0:00:00
+# End time: 16:12:33 on Apr 08,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter {C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter/counter4bit_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/counter {C:/Verilog-Projects/counter/counter4bit_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 03:10:53 on Mar 28,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter" C:/intelFPGA_lite/20.1/quartus/bin64/Projects/counter/counter4bit_tb.v 
+# Start time: 16:12:33 on Apr 08,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Verilog-Projects/counter" C:/Verilog-Projects/counter/counter4bit_tb.v 
 # -- Compiling module counter4bit_tb
 # 
 # Top level modules:
 # 	counter4bit_tb
-# End time: 03:10:53 on Mar 28,2024, Elapsed time: 0:00:00
+# End time: 16:12:33 on Apr 08,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.counter4bit_tb
 # vsim work.counter4bit_tb 
-# Start time: 03:11:02 on Mar 28,2024
+# Start time: 16:12:50 on Apr 08,2024
 # Loading work.counter4bit_tb
 # Loading work.counter4bit
-# End time: 03:12:42 on Mar 28,2024, Elapsed time: 0:01:40
+add wave -position insertpoint  \
+sim:/counter4bit_tb/clk \
+sim:/counter4bit_tb/reset \
+sim:/counter4bit_tb/count
+run
+run
+run
+run
+# ** Note: $finish    : C:/Verilog-Projects/counter/counter4bit_tb.v(18)
+#    Time: 302 ps  Iteration: 0  Instance: /counter4bit_tb
+# 1
+# Break in Module counter4bit_tb at C:/Verilog-Projects/counter/counter4bit_tb.v line 18
+# End time: 16:14:19 on Apr 08,2024, Elapsed time: 0:01:29
 # Errors: 0, Warnings: 0

@@ -1,0 +1,57 @@
+# Reading pref.tcl
+# do regfile_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/regfile {C:/Verilog-Projects/regfile/registerfile.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:32:30 on Apr 05,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Verilog-Projects/regfile" C:/Verilog-Projects/regfile/registerfile.v 
+# -- Compiling module registerfile
+# 
+# Top level modules:
+# 	registerfile
+# End time: 14:32:30 on Apr 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/regfile {C:/Verilog-Projects/regfile/testbench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:32:30 on Apr 05,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Verilog-Projects/regfile" C:/Verilog-Projects/regfile/testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 14:32:30 on Apr 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 14:32:40 on Apr 05,2024
+# Loading work.testbench
+# Loading work.registerfile
+add wave -position insertpoint  \
+sim:/testbench/Ip1 \
+sim:/testbench/sel_i1 \
+sim:/testbench/sel_o1 \
+sim:/testbench/sel_o2 \
+sim:/testbench/RD \
+sim:/testbench/WR \
+sim:/testbench/rst \
+sim:/testbench/EN \
+sim:/testbench/clk \
+sim:/testbench/Op1 \
+sim:/testbench/Op2
+run
+run
+run
+run
+run
+# End time: 14:33:10 on Apr 05,2024, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 0

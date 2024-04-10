@@ -1,0 +1,45 @@
+# Reading pref.tcl
+# do dlatch_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/dlatch {C:/Verilog-Projects/dlatch/D_latch.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:55:21 on Apr 05,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Verilog-Projects/dlatch" C:/Verilog-Projects/dlatch/D_latch.v 
+# -- Compiling module D_latch
+# 
+# Top level modules:
+# 	D_latch
+# End time: 13:55:21 on Apr 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/dlatch {C:/Verilog-Projects/dlatch/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:55:21 on Apr 05,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Verilog-Projects/dlatch" C:/Verilog-Projects/dlatch/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 13:55:21 on Apr 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.tb
+# vsim work.tb 
+# Start time: 13:55:26 on Apr 05,2024
+# Loading work.tb
+# Loading work.D_latch
+add wave -position insertpoint  \
+sim:/tb/e \
+sim:/tb/d \
+sim:/tb/q
+run
+# End time: 13:58:17 on Apr 05,2024, Elapsed time: 0:02:51
+# Errors: 0, Warnings: 0

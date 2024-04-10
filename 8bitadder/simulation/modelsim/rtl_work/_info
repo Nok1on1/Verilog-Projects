@@ -1,0 +1,83 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Verilog-Projects/8bitadder/simulation/modelsim
+vadder8bit
+Z1 !s110 1712607835
+!i10b 1
+!s100 KSQ412QEEAQ6nNcWTm1ad0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<Hm=Gk7Jz1]3OO=iI2eLo0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1712607756
+Z5 8C:/Verilog-Projects/8bitadder/adder8bit.v
+Z6 FC:/Verilog-Projects/8bitadder/adder8bit.v
+!i122 0
+L0 7 11
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1712607835.000000
+Z9 !s107 C:/Verilog-Projects/8bitadder/adder8bit.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Verilog-Projects/8bitadder|C:/Verilog-Projects/8bitadder/adder8bit.v|
+!i113 1
+Z11 o-vlog01compat -work work
+Z12 !s92 -vlog01compat -work work +incdir+C:/Verilog-Projects/8bitadder
+Z13 tCvgOpt 0
+vfulladder1
+R1
+!i10b 1
+!s100 @SY^lnXcmeIVL1Kf;7c[d3
+R2
+I9WTa]HF]JZbAPzCX;YCRN2
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 1 5
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vtb
+R1
+!i10b 1
+!s100 fKebDnUmPQJ@Zb3O4]FRK0
+R2
+IU4]4_7XcJjP_3DR`CF<gz2
+R3
+R0
+w1712607822
+8C:/Verilog-Projects/8bitadder/tb.v
+FC:/Verilog-Projects/8bitadder/tb.v
+!i122 1
+L0 1 13
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Verilog-Projects/8bitadder/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Verilog-Projects/8bitadder|C:/Verilog-Projects/8bitadder/tb.v|
+!i113 1
+R11
+R12
+R13

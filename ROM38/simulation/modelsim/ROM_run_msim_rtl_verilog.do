@@ -5,6 +5,6 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+C:/Projects/ROM38 {C:/Projects/ROM38/ROM.v}
-vlog -vlog01compat -work work +incdir+C:/Projects/ROM38 {C:/Projects/ROM38/ROM_tb.v}
+vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/ROM38 {C:/Verilog-Projects/ROM38/ROM.v}
+vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/ROM38 {C:/Verilog-Projects/ROM38/ROM_tb.v}
 

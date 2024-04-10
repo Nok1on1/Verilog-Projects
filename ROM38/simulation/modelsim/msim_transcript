@@ -10,37 +10,30 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Projects/ROM38 {C:/Projects/ROM38/ROM.v}
+# vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/ROM38 {C:/Verilog-Projects/ROM38/ROM.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:08:05 on Apr 03,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/ROM38" C:/Projects/ROM38/ROM.v 
+# Start time: 01:55:39 on Apr 09,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Verilog-Projects/ROM38" C:/Verilog-Projects/ROM38/ROM.v 
 # -- Compiling module ROM
 # 
 # Top level modules:
 # 	ROM
-# End time: 02:08:05 on Apr 03,2024, Elapsed time: 0:00:00
+# End time: 01:55:39 on Apr 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Projects/ROM38 {C:/Projects/ROM38/ROM_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/ROM38 {C:/Verilog-Projects/ROM38/ROM_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:08:05 on Apr 03,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/ROM38" C:/Projects/ROM38/ROM_tb.v 
+# Start time: 01:55:39 on Apr 09,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Verilog-Projects/ROM38" C:/Verilog-Projects/ROM38/ROM_tb.v 
 # -- Compiling module ROM_tb
 # 
 # Top level modules:
 # 	ROM_tb
-# End time: 02:08:06 on Apr 03,2024, Elapsed time: 0:00:01
+# End time: 01:55:40 on Apr 09,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 vsim work.ROM_tb
 # vsim work.ROM_tb 
-# Start time: 02:10:35 on Apr 03,2024
-# Loading work.ROM_tb
-# Loading work.ROM
-vsim work.ROM_tb
-# End time: 02:10:40 on Apr 03,2024, Elapsed time: 0:00:05
-# Errors: 0, Warnings: 0
-# vsim work.ROM_tb 
-# Start time: 02:10:40 on Apr 03,2024
+# Start time: 01:55:45 on Apr 09,2024
 # Loading work.ROM_tb
 # Loading work.ROM
 add wave -position insertpoint  \
@@ -48,9 +41,9 @@ sim:/ROM_tb/address \
 sim:/ROM_tb/sel \
 sim:/ROM_tb/data
 run
-# ** Note: $finish    : C:/Projects/ROM38/ROM_tb.v(18)
+# ** Note: $finish    : C:/Verilog-Projects/ROM38/ROM_tb.v(18)
 #    Time: 70 ps  Iteration: 0  Instance: /ROM_tb
 # 1
-# Break in Module ROM_tb at C:/Projects/ROM38/ROM_tb.v line 18
-# End time: 02:13:16 on Apr 03,2024, Elapsed time: 0:02:36
+# Break in Module ROM_tb at C:/Verilog-Projects/ROM38/ROM_tb.v line 18
+# End time: 01:56:32 on Apr 09,2024, Elapsed time: 0:00:47
 # Errors: 0, Warnings: 0
