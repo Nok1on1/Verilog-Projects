@@ -1,0 +1,15 @@
+module tb;
+
+reg d;
+reg clk;
+reg reset;
+wire [7:0] out;
+
+Dflipflop tuut(input d, input clk, input reset, output reg [7:0] out);
+
+
+always #5 clk = ~clk;
+initial begin 
+clk = 0;
+d = 1;
+reset = 0;

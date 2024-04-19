@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at Dflipflop.v(3): always construct contains both blocking and non-blocking assignments File: C:/Verilog-Projects/dflipflop/Dflipflop.v Line: 3

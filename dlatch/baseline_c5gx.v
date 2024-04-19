@@ -170,4 +170,6 @@ module baseline_c5gx(
 
 );
 
+D_latch uut(.D(SW[1]), .EN(SW[0]), .Q(LEDG [0]));
+
 endmodule

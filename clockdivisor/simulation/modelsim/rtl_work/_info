@@ -10,14 +10,14 @@ z2
 cModel Technology
 Z0 dC:/Verilog-Projects/clockdivisor/simulation/modelsim
 vclkdivisor
-Z1 !s110 1712677380
+Z1 !s110 1712936345
 !i10b 1
-!s100 N?jKQz;<69X@K9OYUIJ283
+!s100 TW7J`1Ung@O^eBDJ;PQ=62
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Ikz:9RFdF8NobO:VLonfnh2
+IIXGd;cQzN3e1@gFkRY=J61
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1712676391
+w1712936327
 8C:/Verilog-Projects/clockdivisor/clkdivisor.v
 FC:/Verilog-Projects/clockdivisor/clkdivisor.v
 !i122 0
@@ -26,7 +26,7 @@ Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1712677380.000000
+Z5 !s108 1712936345.000000
 !s107 C:/Verilog-Projects/clockdivisor/clkdivisor.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Verilog-Projects/clockdivisor|C:/Verilog-Projects/clockdivisor/clkdivisor.v|
 !i113 1

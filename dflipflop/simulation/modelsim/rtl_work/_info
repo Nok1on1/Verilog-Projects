@@ -1,0 +1,60 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Verilog-Projects/dflipflop/simulation/modelsim
+vbaseline_c5gx
+!s110 1712945710
+!i10b 1
+!s100 TmzzmV@l99JEAVAT@Hml61
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IRXTQ06fCJI0j5LhllT5171
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1712944298
+8C:/Verilog-Projects/dflipflop/baseline_c5gx.v
+FC:/Verilog-Projects/dflipflop/baseline_c5gx.v
+!i122 0
+L0 38 138
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1712945710.000000
+!s107 C:/Verilog-Projects/dflipflop/baseline_c5gx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Verilog-Projects/dflipflop|C:/Verilog-Projects/dflipflop/baseline_c5gx.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Verilog-Projects/dflipflop
+Z7 tCvgOpt 0
+vDflipflop
+!s110 1712945712
+!i10b 1
+!s100 D<hnT@eWd5lE>lf8>`<eO0
+R1
+IniPeL6H;PgS^20^F><?^m3
+R2
+R0
+w1712945679
+8C:/Verilog-Projects/dflipflop/Dflipflop.v
+FC:/Verilog-Projects/dflipflop/Dflipflop.v
+!i122 1
+L0 1 13
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Verilog-Projects/dflipflop/Dflipflop.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Verilog-Projects/dflipflop|C:/Verilog-Projects/dflipflop/Dflipflop.v|
+!i113 1
+R5
+R6
+R7
+n@dflipflop

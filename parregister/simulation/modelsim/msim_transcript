@@ -1,0 +1,52 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do par_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/parregister {C:/Verilog-Projects/parregister/parametrizable_register.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:06:33 on Apr 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Verilog-Projects/parregister" C:/Verilog-Projects/parregister/parametrizable_register.v 
+# -- Compiling module parametrizable_register
+# 
+# Top level modules:
+# 	parametrizable_register
+# End time: 03:06:33 on Apr 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/parregister {C:/Verilog-Projects/parregister/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:06:33 on Apr 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Verilog-Projects/parregister" C:/Verilog-Projects/parregister/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 03:06:33 on Apr 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.tb
+# vsim work.tb 
+# Start time: 03:06:36 on Apr 17,2024
+# Loading work.tb
+# Loading work.parametrizable_register
+add wave -position insertpoint  \
+sim:/tb/WIDTH \
+sim:/tb/clk \
+sim:/tb/reset \
+sim:/tb/data_in \
+sim:/tb/data_out
+run
+# ** Note: $finish    : C:/Verilog-Projects/parregister/tb.v(28)
+#    Time: 90 ps  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at C:/Verilog-Projects/parregister/tb.v line 28
+# End time: 03:08:17 on Apr 17,2024, Elapsed time: 0:01:41
+# Errors: 0, Warnings: 0

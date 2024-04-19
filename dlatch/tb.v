@@ -6,7 +6,7 @@ module tb();
 
 	wire q;
 
-	D_latch uut (.E(e),.D(d),.Q(q) );
+	D_latch uut (.EN(e),.D(d),.Q(q) );
 
 	initial begin
 	d = 0;

@@ -1,0 +1,74 @@
+Info: Starting: Create simulation model
+Info: qsys-generate C:\Verilog-Projects\flipflop\clockslow.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=C:\Verilog-Projects\flipflop\clockslow\simulation --family="Cyclone V" --part=5CGXFC5C6F27C7
+Progress: Loading flipflop/clockslow.qsys
+Progress: Reading input file
+Progress: Adding altclkctrl_0 [altclkctrl 20.1]
+Progress: Parameterizing module altclkctrl_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: clockslow.altclkctrl_0: Targeting device family: Cyclone V.
+: clockslow.altclkctrl_0: Global clock network allows a clock signal to reach all parts of the chip with the same amount of skew. Input port 'clkselect' can be used to switch between four clock inputs.
+: clockslow.altclkctrl_0: The register mode of port 'ena' is unavailable while 'ena' port not added. 
+Info: clockslow: Generating clockslow "clockslow" for SIM_VERILOG
+Info: altclkctrl_0: Generating top-level entity clockslow_altclkctrl_0.
+Info: altclkctrl_0: "clockslow" instantiated altclkctrl "altclkctrl_0"
+Info: clockslow: Done "clockslow" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=C:\Verilog-Projects\flipflop\clockslow\clockslow.spd --output-directory=C:/Verilog-Projects/flipflop/clockslow/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Verilog-Projects\flipflop\clockslow\clockslow.spd --output-directory=C:/Verilog-Projects/flipflop/clockslow/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Verilog-Projects/flipflop/clockslow/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in C:/Verilog-Projects/flipflop/clockslow/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in C:/Verilog-Projects/flipflop/clockslow/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Verilog-Projects/flipflop/clockslow/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in C:/Verilog-Projects/flipflop/clockslow/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Verilog-Projects/flipflop/clockslow/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Verilog-Projects\flipflop\clockslow.qsys --block-symbol-file --output-directory=C:\Verilog-Projects\flipflop\clockslow --family="Cyclone V" --part=5CGXFC5C6F27C7
+Progress: Loading flipflop/clockslow.qsys
+Progress: Reading input file
+Progress: Adding altclkctrl_0 [altclkctrl 20.1]
+Progress: Parameterizing module altclkctrl_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: clockslow.altclkctrl_0: Targeting device family: Cyclone V.
+: clockslow.altclkctrl_0: Global clock network allows a clock signal to reach all parts of the chip with the same amount of skew. Input port 'clkselect' can be used to switch between four clock inputs.
+: clockslow.altclkctrl_0: The register mode of port 'ena' is unavailable while 'ena' port not added. 
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Verilog-Projects\flipflop\clockslow.qsys --synthesis=VERILOG --output-directory=C:\Verilog-Projects\flipflop\clockslow\synthesis --family="Cyclone V" --part=5CGXFC5C6F27C7
+Progress: Loading flipflop/clockslow.qsys
+Progress: Reading input file
+Progress: Adding altclkctrl_0 [altclkctrl 20.1]
+Progress: Parameterizing module altclkctrl_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: clockslow.altclkctrl_0: Targeting device family: Cyclone V.
+: clockslow.altclkctrl_0: Global clock network allows a clock signal to reach all parts of the chip with the same amount of skew. Input port 'clkselect' can be used to switch between four clock inputs.
+: clockslow.altclkctrl_0: The register mode of port 'ena' is unavailable while 'ena' port not added. 
+Info: clockslow: Generating clockslow "clockslow" for QUARTUS_SYNTH
+Info: altclkctrl_0: Generating top-level entity clockslow_altclkctrl_0.
+Info: altclkctrl_0: "clockslow" instantiated altclkctrl "altclkctrl_0"
+Info: clockslow: Done "clockslow" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -5,7 +5,7 @@ always @(sel or address)
 		if(~sel) data <= 8'b00000000;
 			else begin
 			case(address)
-			3'b000 : data <= 8'b00000001;
+			3'b000 : data <= 8'b11100001;
 			3'b001 : data <= 8'b00000011;
 			3'b010 : data <= 8'b00001001;
 			3'b011 : data <= 8'b00110001;

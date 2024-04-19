@@ -170,4 +170,6 @@ module baseline_c5gx(
 
 );
 
+	clkdivisor uut(.clk(KEY [0]), .Dclk(LEDG [0]));
+
 endmodule

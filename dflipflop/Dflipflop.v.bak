@@ -1,0 +1,1 @@
+module Dflipflop(input d, input clk, input reset, output reg out);

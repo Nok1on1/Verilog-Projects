@@ -1,10 +1,10 @@
-module Dflipflop(input wire d, input wire clk, input wire reset, output reg q);
+module Dflipflop(input d, input clk, input reset, output reg out);
 
     always @(posedge clk or posedge reset) begin
         if (reset) begin
-            q <= 1'b0;
+            out <= 1'b0;
         end else begin
-            q <= d;
+            out <= d;
         end
     end
 endmodule

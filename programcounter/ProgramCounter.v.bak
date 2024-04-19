@@ -1,0 +1,23 @@
+module ProgramCounter(input clk, input reset, output reg [31:0] pc);
+
+    // Define constants
+    parameter PC_WIDTH = 32;  // Width of the program counter
+    parameter PC_MAX = (1 << PC_WIDTH) - 1; // Maximum value of the program counter
+
+    // Internal register to hold the program counter value
+    reg [31:0] counter;
+
+    // Process to update the program counter
+    always @(posedge clk) begin
+        if (reset)  // Reset the counter if reset signal is asserted
+            counter <= 0;
+        else if (counter == PC_MAX)  // Wrap around if counter reaches maximum value
+            counter <= 0;
+        else  // Increment the counter otherwise
+            counter <= counter + 1;
+    end
+
+    // Assign the program counter value to the output
+    assign pc = counter;
+
+endmodule

@@ -1,0 +1,6 @@
+module Mux(input D0, input D1, input S, output reg O);
+	always @* begin
+	if (S == 0) O <= D0;
+	else if (S == 1) O <= D1;
+	end
+endmodule

@@ -169,5 +169,6 @@ module baseline_c5gx(
 
 
 );
+ROM uut(.address(SW [2:0]), .sel(SW [9]), .data(LEDG [7:0]));
 
 endmodule

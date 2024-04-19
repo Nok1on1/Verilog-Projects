@@ -1,0 +1,18 @@
+# system info clockslow on 2024.04.12.21:35:44
+system_info:
+name,value
+DEVICE,5CGXFC5C6F27C7
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1712943343
+#
+#
+# Files generated for clockslow on 2024.04.12.21:35:44
+files:
+filepath,kind,attributes,module,is_top
+simulation/clockslow.v,VERILOG,,clockslow,true
+simulation/submodules/clockslow_altclkctrl_0.v,VERILOG,,clockslow_altclkctrl_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+clockslow.altclkctrl_0,clockslow_altclkctrl_0

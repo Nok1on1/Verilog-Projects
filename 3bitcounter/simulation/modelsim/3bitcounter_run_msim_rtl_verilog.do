@@ -5,6 +5,6 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+C:/Projects/3bitcounter {C:/Projects/3bitcounter/counter3bit.v}
-vlog -vlog01compat -work work +incdir+C:/Projects/3bitcounter {C:/Projects/3bitcounter/counter3bit_tb.v}
+vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/3bitcounter {C:/Verilog-Projects/3bitcounter/baseline_c5gx.v}
+vlog -vlog01compat -work work +incdir+C:/Verilog-Projects/3bitcounter {C:/Verilog-Projects/3bitcounter/counter3bit.v}
 

@@ -4,7 +4,7 @@ module tb;
     reg reset;
     wire q;
 	 
-    Dflipflop uut(.d(d), .clk(clk), .reset(reset), .q(q));
+    Dflipflop uut(.d(d), .clk(clk), .reset(reset), .out(q));
 
     
 	initial begin

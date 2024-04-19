@@ -1,5 +1,5 @@
 Fitter report for 3bitcounter
-Thu Apr 04 11:12:11 2024
+Fri Apr 12 17:01:38 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Thu Apr 04 11:12:11 2024       ;
+; Fitter Status                   ; Successful - Fri Apr 12 17:01:38 2024       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; 3bitcounter                                 ;
 ; Top-level Entity Name           ; baseline_c5gx                               ;
@@ -156,23 +156,23 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.7%      ;
+;     Processor 2            ;   0.2%      ;
 ;     Processors 3-10        ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Netlist Optimizations                                                                                                                                     ;
-+--------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
-; Node               ; Action  ; Operation ; Reason                     ; Node Port ; Node Port Name ; Destination Node ; Destination Port ; Destination Port Name ;
-+--------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
-; SW[9]~inputCLKENA0 ; Created ; Placement ; Fitter Periphery Placement ;           ;                ;                  ;                  ;                       ;
-+--------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Netlist Optimizations                                                                                                                                      ;
++---------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
+; Node                ; Action  ; Operation ; Reason                     ; Node Port ; Node Port Name ; Destination Node ; Destination Port ; Destination Port Name ;
++---------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
+; KEY[0]~inputCLKENA0 ; Created ; Placement ; Fitter Periphery Placement ;           ;                ;                  ;                  ;                       ;
++---------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -515,8 +515,8 @@ The pin-out file can be found in C:/Verilog-Projects/3bitcounter/output_files/3b
 ; Channel PLLs                                                ; 0 / 6              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
-; Average interconnect usage (total/H/V)                      ; 0.1% / 0.1% / 0.1% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.5% / 0.5% / 0.5% ;       ;
+; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.1% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.2% / 0.2% / 0.4% ;       ;
 ; Maximum fan-out                                             ; 6                  ;       ;
 ; Highest non-global fan-out                                  ; 6                  ;       ;
 ; Total fan-out                                               ; 371                ;       ;
@@ -631,8 +631,8 @@ The pin-out file can be found in C:/Verilog-Projects/3bitcounter/output_files/3b
 ; HSMC_CLKIN_n[2] ; K9    ; 8A       ; 15           ; 61           ; 17           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; HSMC_CLKIN_p[1] ; G15   ; 7A       ; 46           ; 61           ; 0            ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; HSMC_CLKIN_p[2] ; L8    ; 8A       ; 15           ; 61           ; 0            ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; KEY[0]          ; P11   ; 3B       ; 21           ; 0            ; 0            ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 1.2 V        ; Off         ; --                        ; User                 ; no        ;
-; KEY[1]          ; P12   ; 3B       ; 21           ; 0            ; 17           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 1.2 V        ; Off         ; --                        ; User                 ; no        ;
+; KEY[0]          ; P11   ; 3B       ; 21           ; 0            ; 0            ; 3                     ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 1.2 V        ; Off         ; --                        ; User                 ; no        ;
+; KEY[1]          ; P12   ; 3B       ; 21           ; 0            ; 17           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 1.2 V        ; Off         ; --                        ; User                 ; no        ;
 ; KEY[2]          ; Y15   ; 4A       ; 46           ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 1.2 V        ; Off         ; --                        ; User                 ; no        ;
 ; KEY[3]          ; Y16   ; 4A       ; 46           ; 0            ; 17           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 1.2 V        ; Off         ; --                        ; User                 ; no        ;
 ; SW[0]           ; AC9   ; 3B       ; 14           ; 0            ; 34           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 1.2 V        ; Off         ; --                        ; User                 ; no        ;
@@ -644,7 +644,7 @@ The pin-out file can be found in C:/Verilog-Projects/3bitcounter/output_files/3b
 ; SW[6]           ; V10   ; 3B       ; 17           ; 0            ; 74           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 1.2 V        ; Off         ; --                        ; User                 ; no        ;
 ; SW[7]           ; AC10  ; 3B       ; 12           ; 0            ; 51           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 1.2 V        ; Off         ; --                        ; User                 ; no        ;
 ; SW[8]           ; Y11   ; 3B       ; 10           ; 0            ; 57           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 1.2 V        ; Off         ; --                        ; User                 ; no        ;
-; SW[9]           ; AE19  ; 4A       ; 50           ; 0            ; 34           ; 3                     ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 1.2 V        ; Off         ; --                        ; User                 ; no        ;
+; SW[9]           ; AE19  ; 4A       ; 50           ; 0            ; 34           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 1.2 V        ; Off         ; --                        ; User                 ; no        ;
 ; UART_RX         ; M9    ; 8A       ; 18           ; 61           ; 0            ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 +-----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
@@ -1883,7 +1883,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HSMC_CLKOUT_p[1] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; HSMC_CLKOUT_p[2] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; I2C_SCL          ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; KEY[1]           ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; KEY[2]           ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; KEY[3]           ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; LEDG[0]          ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
@@ -1935,6 +1934,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[6]            ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[7]            ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[8]            ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[9]            ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; UART_RX          ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; UART_TX          ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; AUD_ADCLRCK      ; Bidir    ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
@@ -2035,9 +2035,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SRAM_D[14]       ; Bidir    ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; SRAM_D[15]       ; Bidir    ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; SW[0]            ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[1]            ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[9]            ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; KEY[0]           ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[1]            ; Input    ; -- ; (0)  ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; KEY[0]           ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; KEY[1]           ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; CLOCK_125_p(n)   ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +------------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
@@ -2061,7 +2061,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HSMC_CLKIN_n[2]                      ;                   ;         ;
 ; HSMC_CLKIN_p[1]                      ;                   ;         ;
 ; HSMC_CLKIN_p[2]                      ;                   ;         ;
-; KEY[1]                               ;                   ;         ;
 ; KEY[2]                               ;                   ;         ;
 ; KEY[3]                               ;                   ;         ;
 ; SW[2]                                ;                   ;         ;
@@ -2071,6 +2070,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[6]                                ;                   ;         ;
 ; SW[7]                                ;                   ;         ;
 ; SW[8]                                ;                   ;         ;
+; SW[9]                                ;                   ;         ;
 ; UART_RX                              ;                   ;         ;
 ; AUD_ADCLRCK                          ;                   ;         ;
 ; AUD_BCLK                             ;                   ;         ;
@@ -2177,15 +2177,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - counter3bit:dut|count~0       ; 1                 ; 0       ;
 ;      - counter3bit:dut|count~1       ; 1                 ; 0       ;
 ;      - counter3bit:dut|count~2       ; 1                 ; 0       ;
-;      - counter3bit:dut|next_count[0] ; 1                 ; 0       ;
-;      - counter3bit:dut|next_count[1] ; 1                 ; 0       ;
-;      - counter3bit:dut|next_count[2] ; 1                 ; 0       ;
-; SW[9]                                ;                   ;         ;
-;      - SW[9]~inputCLKENA0            ; 0                 ; 0       ;
+;      - counter3bit:dut|next_count[0] ; 0                 ; 0       ;
+;      - counter3bit:dut|next_count[1] ; 0                 ; 0       ;
+;      - counter3bit:dut|next_count[2] ; 0                 ; 0       ;
 ; KEY[0]                               ;                   ;         ;
-;      - counter3bit:dut|count[0]      ; 1                 ; 0       ;
-;      - counter3bit:dut|count[1]      ; 1                 ; 0       ;
-;      - counter3bit:dut|count[2]      ; 1                 ; 0       ;
+; KEY[1]                               ;                   ;         ;
+;      - counter3bit:dut|count[0]      ; 0                 ; 0       ;
+;      - counter3bit:dut|count[1]      ; 0                 ; 0       ;
+;      - counter3bit:dut|count[2]      ; 0                 ; 0       ;
 ; CLOCK_125_p(n)                       ;                   ;         ;
 +--------------------------------------+-------------------+---------+
 
@@ -2195,19 +2194,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+----------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name   ; Location ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------+----------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; KEY[0] ; PIN_P11  ; 3       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; KEY[0] ; PIN_P11  ; 3       ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; KEY[1] ; PIN_P12  ; 3       ; Async. clear ; no     ; --                   ; --               ; --                        ;
 ; SW[1]  ; PIN_AE10 ; 6       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; SW[9]  ; PIN_AE19 ; 3       ; Clock        ; yes    ; Global Clock         ; GCLK7            ; --                        ;
 +--------+----------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                      ;
-+-------+----------+---------+----------------------+------------------+---------------------------+
-; Name  ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------+----------+---------+----------------------+------------------+---------------------------+
-; SW[9] ; PIN_AE19 ; 3       ; Global Clock         ; GCLK7            ; --                        ;
-+-------+----------+---------+----------------------+------------------+---------------------------+
++---------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                       ;
++--------+----------+---------+----------------------+------------------+---------------------------+
+; Name   ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------+----------+---------+----------------------+------------------+---------------------------+
+; KEY[0] ; PIN_P11  ; 3       ; Global Clock         ; GCLK6            ; --                        ;
++--------+----------+---------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------------+
@@ -2216,21 +2215,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Routing Resource Type        ; Usage                  ;
 +------------------------------+------------------------+
 ; Block interconnects          ; 13 / 217,884 ( < 1 % ) ;
-; C12 interconnects            ; 5 / 10,080 ( < 1 % )   ;
-; C2 interconnects             ; 18 / 87,208 ( < 1 % )  ;
-; C4 interconnects             ; 58 / 41,360 ( < 1 % )  ;
+; C12 interconnects            ; 3 / 10,080 ( < 1 % )   ;
+; C2 interconnects             ; 4 / 87,208 ( < 1 % )   ;
+; C4 interconnects             ; 49 / 41,360 ( < 1 % )  ;
 ; DQS bus muxes                ; 0 / 21 ( 0 % )         ;
 ; DQS-18 I/O buses             ; 0 / 21 ( 0 % )         ;
 ; DQS-9 I/O buses              ; 0 / 21 ( 0 % )         ;
-; Direct links                 ; 0 / 217,884 ( 0 % )    ;
+; Direct links                 ; 2 / 217,884 ( < 1 % )  ;
 ; Global clocks                ; 1 / 16 ( 6 % )         ;
 ; Horizontal periphery clocks  ; 0 / 12 ( 0 % )         ;
 ; Local interconnects          ; 6 / 58,160 ( < 1 % )   ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )         ;
-; R14 interconnects            ; 23 / 9,228 ( < 1 % )   ;
-; R14/C12 interconnect drivers ; 27 / 15,096 ( < 1 % )  ;
-; R3 interconnects             ; 33 / 94,896 ( < 1 % )  ;
-; R6 interconnects             ; 43 / 194,640 ( < 1 % ) ;
+; R14 interconnects            ; 11 / 9,228 ( < 1 % )   ;
+; R14/C12 interconnect drivers ; 13 / 15,096 ( < 1 % )  ;
+; R3 interconnects             ; 12 / 94,896 ( < 1 % )  ;
+; R6 interconnects             ; 6 / 194,640 ( < 1 % )  ;
 ; Spine clocks                 ; 1 / 180 ( < 1 % )      ;
 ; Wire stub REs                ; 0 / 11,606 ( 0 % )     ;
 +------------------------------+------------------------+
@@ -2377,7 +2376,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HSMC_CLKOUT_p[1]   ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ;
 ; HSMC_CLKOUT_p[2]   ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ;
 ; I2C_SCL            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ;
-; KEY[1]             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; KEY[2]             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; KEY[3]             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; LEDG[0]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ;
@@ -2429,6 +2427,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[6]              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; SW[7]              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; SW[8]              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; SW[9]              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; UART_RX            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; UART_TX            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ;
 ; AUD_ADCLRCK        ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ;
@@ -2530,8 +2529,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SRAM_D[15]         ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ;
 ; SW[0]              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; SW[1]              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; SW[9]              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; KEY[0]             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; KEY[1]             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; CLOCK_125_p(n)     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 
@@ -2584,26 +2583,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; I/O             ; SW[9]                ; 23.4              ;
-; SW[1]           ; SW[9]                ; 20.3              ;
+; I/O             ; KEY[0]               ; 6.0               ;
+; SW[1]           ; KEY[0]               ; 1.9               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
-+------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                ;
-+-------------------------------+--------------------------+-------------------+
-; Source Register               ; Destination Register     ; Delay Added in ns ;
-+-------------------------------+--------------------------+-------------------+
-; SW[1]                         ; counter3bit:dut|count[2] ; 7.823             ;
-; counter3bit:dut|next_count[0] ; counter3bit:dut|count[0] ; 6.820             ;
-; counter3bit:dut|next_count[1] ; counter3bit:dut|count[1] ; 6.765             ;
-; counter3bit:dut|next_count[2] ; counter3bit:dut|count[2] ; 6.694             ;
-; counter3bit:dut|count[0]      ; counter3bit:dut|count[2] ; 0.281             ;
-; counter3bit:dut|count[1]      ; counter3bit:dut|count[2] ; 0.270             ;
-+-------------------------------+--------------------------+-------------------+
-Note: This table only shows the top 6 path(s) that have the largest delay added for hold.
++-----------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                     ;
++-------------------------------+-------------------------------+-------------------+
+; Source Register               ; Destination Register          ; Delay Added in ns ;
++-------------------------------+-------------------------------+-------------------+
+; SW[1]                         ; counter3bit:dut|count[2]      ; 1.999             ;
+; counter3bit:dut|next_count[0] ; counter3bit:dut|count[0]      ; 0.723             ;
+; counter3bit:dut|next_count[1] ; counter3bit:dut|count[1]      ; 0.649             ;
+; counter3bit:dut|next_count[2] ; counter3bit:dut|count[2]      ; 0.548             ;
+; counter3bit:dut|count[2]      ; counter3bit:dut|next_count[0] ; 0.343             ;
+; counter3bit:dut|count[1]      ; counter3bit:dut|next_count[2] ; 0.331             ;
+; counter3bit:dut|count[0]      ; counter3bit:dut|next_count[1] ; 0.314             ;
++-------------------------------+-------------------------------+-------------------+
+Note: This table only shows the top 7 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -2621,11 +2621,7 @@ Info (184025): 1 differential I/O pins do not have complementary pins. As a resu
     Info (184026): differential I/O pin "CLOCK_125_p" does not have a complementary pin. As a result, the Fitter automatically creates the complementary pin "CLOCK_125_p(n)". File: C:/Verilog-Projects/3bitcounter/baseline_c5gx.v Line: 55
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
-    Info (11162): SW[9]~inputCLKENA0 with 3 fanout uses global clock CLKCTRL_G7
-        Info (12525): This signal is driven by core routing -- it may be moved during placement to reduce routing delays
-Warning (16406): 1 global input pin(s) will use non-dedicated clock routing
-    Warning (16407): Source REFCLK I/O is not placed onto a dedicated REFCLK input pin for global clock driver SW[9]~inputCLKENA0, placed at CLKCTRL_G7
-        Info (179012): Refclk input I/O pad SW[9] is placed onto PIN_AE19
+    Info (11162): KEY[0]~inputCLKENA0 with 3 fanout uses global clock CLKCTRL_G6
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
 Info (176233): Starting register packing
 Warning (335093): The Timing Analyzer is analyzing 3 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
@@ -2638,8 +2634,8 @@ Info (332128): Timing requirements not specified -- optimizing circuit to achiev
 Info (332111): Found 2 clocks
     Info (332111):   Period   Clock Name
     Info (332111): ======== ============
+    Info (332111):    1.000       KEY[0]
     Info (332111):    1.000        SW[1]
-    Info (332111):    1.000        SW[9]
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Warning (15705): Ignored locations or region assignments to the following nodes
@@ -2752,7 +2748,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "REFCLK_p1" is assigned to location or region, but does not exist in design
     Warning (15706): Node "SMA_GXB_RX_p" is assigned to location or region, but does not exist in design
     Warning (15706): Node "SMA_GXB_TX_p" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:09
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:04
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
@@ -2763,12 +2759,12 @@ Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X34_Y0 to location X45_Y11
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.53 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.52 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:06
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:05
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169064): Following 97 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
     Info (169065): Pin AUD_ADCLRCK has a permanently disabled output enable File: C:/Verilog-Projects/3bitcounter/baseline_c5gx.v Line: 48
@@ -2869,11 +2865,11 @@ Warning (169064): Following 97 pins have no output enable or a GND or VCC output
     Info (169065): Pin SRAM_D[14] has a permanently disabled output enable File: C:/Verilog-Projects/3bitcounter/baseline_c5gx.v Line: 157
     Info (169065): Pin SRAM_D[15] has a permanently disabled output enable File: C:/Verilog-Projects/3bitcounter/baseline_c5gx.v Line: 157
 Info (144001): Generated suppressed messages file C:/Verilog-Projects/3bitcounter/output_files/3bitcounter.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 119 warnings
-    Info: Peak virtual memory: 6953 megabytes
-    Info: Processing ended: Thu Apr 04 11:12:13 2024
-    Info: Elapsed time: 00:00:46
-    Info: Total CPU time (on all processors): 00:00:11
+Info: Quartus Prime Fitter was successful. 0 errors, 117 warnings
+    Info: Peak virtual memory: 6938 megabytes
+    Info: Processing ended: Fri Apr 12 17:01:39 2024
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:21
 
 
 +----------------------------+

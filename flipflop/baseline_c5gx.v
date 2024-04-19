@@ -169,5 +169,6 @@ module baseline_c5gx(
 
 
 );
+ Dflipflop uut(.d(SW[0]), .clk(SW [9]), .reset(KEY[0]), .out(LEDG [7:0]));
 
 endmodule
