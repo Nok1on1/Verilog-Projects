@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module counter3bit_tb;
 
 reg clk, reset, set, load;
@@ -5,9 +7,16 @@ wire [2:0] count;
 
 counter3bit dut(.clk(clk), .reset(reset), .set(set), .load(load), .count(count));
 
-always #5 clk = ~clk;
+always begin 
+       #5 clk = ~clk; 
+       $display("Count = %b", count);
+end
 
 initial begin
+    // Specify the VCD output file
+    $dumpfile("counter3bit.vcd");
+    // Dump all variables in the testbench
+    $dumpvars(0, counter3bit_tb);
     clk = 0;
     reset = 1;
     set = 0;
@@ -30,7 +39,7 @@ always begin
     #5;
     load = 0;
     #50;
-    $stop;
+    $finish;
 end
 
 endmodule
