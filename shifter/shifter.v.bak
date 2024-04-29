@@ -1,0 +1,16 @@
+module shifter (input in, lr, clk, en; output wire [3:0] out);
+
+reg [3:0] toshift
+
+always @(posedge clk) begin
+	if(en) begin
+		if(lr) out <= {in,toshift >> 1};
+		else if (~lr) out <= {toshift << 1};
+	end
+	else begin end
+end
+
+endmodule		
+
+
+

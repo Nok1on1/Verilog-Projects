@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Verilog-Projects/barrelshifter/simulation/modelsim
+vbarrel
+!s110 1714134906
+!i10b 1
+!s100 OTO5a[SH869Yb]18jlI=Q0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IjJIOdhU_6o8CZFjEc:`AF2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1714134890
+8C:/Verilog-Projects/barrelshifter/barrel.v
+FC:/Verilog-Projects/barrelshifter/barrel.v
+!i122 0
+L0 1 31
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1714134906.000000
+!s107 C:/Verilog-Projects/barrelshifter/barrel.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Verilog-Projects/barrelshifter|C:/Verilog-Projects/barrelshifter/barrel.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+C:/Verilog-Projects/barrelshifter
+Z6 tCvgOpt 0
+vtb
+!s110 1714134907
+!i10b 1
+!s100 9fBi5Of1mjD7YNTU^=[TC1
+R1
+IR<EVn[;?_U;IDm^Ug=Q@W2
+R2
+R0
+w1714134884
+8C:/Verilog-Projects/barrelshifter/tb.v
+FC:/Verilog-Projects/barrelshifter/tb.v
+!i122 1
+L0 1 23
+R3
+r1
+!s85 0
+31
+!s108 1714134907.000000
+!s107 C:/Verilog-Projects/barrelshifter/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Verilog-Projects/barrelshifter|C:/Verilog-Projects/barrelshifter/tb.v|
+!i113 1
+R4
+R5
+R6

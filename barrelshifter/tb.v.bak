@@ -1,0 +1,7 @@
+module tb;
+
+reg in, dir, clk, rst;
+reg [1:0] steps;
+wire [3:0] out;
+
+shifter uut(in, dir, clk, rst, out);

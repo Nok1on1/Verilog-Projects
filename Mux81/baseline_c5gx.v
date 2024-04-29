@@ -170,4 +170,6 @@ module baseline_c5gx(
 
 );
 
+Mux_81 uut(.in(SW[7:0]), .select(KEY[2:0]), .out(LEDG[0]));
+
 endmodule

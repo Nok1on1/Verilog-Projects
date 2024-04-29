@@ -1,0 +1,70 @@
+|tb
+
+
+|tb|barrel:uut
+in[0] => toshift.DATAA
+in[0] => out.DATAA
+in[0] => toshift.DATAA
+in[0] => out.DATAA
+in[0] => toshift.DATAA
+in[0] => out.DATAA
+in[0] => toshift.DATAA
+in[0] => out.DATAA
+in[0] => out.DATAB
+in[1] => toshift.DATAA
+in[1] => out.DATAA
+in[1] => toshift.DATAA
+in[1] => out.DATAA
+in[1] => toshift.DATAA
+in[1] => out.DATAA
+in[1] => out.DATAB
+in[2] => toshift.DATAA
+in[2] => out.DATAA
+in[2] => toshift.DATAA
+in[2] => out.DATAA
+in[2] => out.DATAB
+in[3] => toshift.DATAA
+in[3] => out.DATAA
+in[3] => out.DATAB
+steps[0] => LessThan0.IN4
+steps[0] => LessThan1.IN4
+steps[0] => LessThan2.IN4
+steps[0] => LessThan3.IN4
+steps[0] => ShiftLeft0.IN2
+steps[0] => Equal0.IN1
+steps[1] => LessThan0.IN3
+steps[1] => LessThan1.IN3
+steps[1] => LessThan2.IN3
+steps[1] => LessThan3.IN3
+steps[1] => ShiftLeft0.IN1
+steps[1] => Equal0.IN0
+dir => out.OUTPUTSELECT
+dir => out.OUTPUTSELECT
+dir => out.OUTPUTSELECT
+dir => out.OUTPUTSELECT
+dir => toshift.OUTPUTSELECT
+dir => toshift.OUTPUTSELECT
+dir => toshift.OUTPUTSELECT
+dir => toshift.OUTPUTSELECT
+clk => toshift[0].CLK
+clk => toshift[1].CLK
+clk => toshift[2].CLK
+clk => toshift[3].CLK
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => toshift.OUTPUTSELECT
+rst => toshift.OUTPUTSELECT
+rst => toshift.OUTPUTSELECT
+rst => toshift.OUTPUTSELECT
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

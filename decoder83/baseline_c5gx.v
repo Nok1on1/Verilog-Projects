@@ -170,4 +170,6 @@ module baseline_c5gx(
 
 );
 
+encoder_83 uut(.in(SW[7:0]), .out(LEDG[2:0]));
+
 endmodule

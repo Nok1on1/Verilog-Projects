@@ -1,0 +1,24 @@
+module mux4 (input a,b,c,d, input Sh, L, output out);
+
+	always@* begin
+		case({Sh,L})
+			2'b00 : out = a;
+			2'b01 : out = b;
+			2'b10 : out = c;
+			2'b11 : out = d;
+		endcase
+	end
+endmodule
+
+module Dflipflop (input D, CLK, output Q)
+
+	always @(negedge CLK) begin
+		Q <= D;
+	end
+
+endmodule
+
+
+
+
+

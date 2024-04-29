@@ -1,0 +1,1 @@
+module barrel (input [3:0] in, input dir, clk, rst, output [3:0] out)

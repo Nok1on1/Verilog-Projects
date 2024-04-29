@@ -169,5 +169,6 @@ module baseline_c5gx(
 
 
 );
+	counter4bit uut(.clk(KEY[0]), .reset(KEY[2]), .count(LEDG[3:0]));
 
 endmodule

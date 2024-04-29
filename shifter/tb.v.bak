@@ -1,0 +1,22 @@
+module tb;
+
+wire in, lr, clk, en;
+reg [3:0] out;
+
+shifter uut(in, lr, clk, en, out);
+
+always #5 clk = ~clk;
+
+initial begin
+  clk = 0;
+  en = 1;
+  #5;
+  in = 1;
+  #5;
+  in = 0;
+  #20;
+  #in = 1;
+  #20;
+  end
+endmodule
+  
