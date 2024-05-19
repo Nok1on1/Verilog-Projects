@@ -1,5 +1,5 @@
 Analysis & Synthesis report for parallel
-Mon Apr 29 14:04:58 2024
+Thu May 02 21:49:49 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,7 +10,9 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Port Connectivity Checks: "shiftregister:uut"
+  6. Elapsed Time Per Partition
+  7. Analysis & Synthesis Messages
 
 
 
@@ -37,10 +39,10 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Mon Apr 29 14:04:58 2024           ;
+; Analysis & Synthesis Status ; Failed - Thu May 02 21:49:49 2024           ;
 ; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; parallel                                    ;
-; Top-level Entity Name       ; baseline_c5gx                               ;
+; Top-level Entity Name       ; parallel_tb                                 ;
 ; Family                      ; Cyclone V                                   ;
 ; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
 ; Total registers             ; N/A until Partition Merge                   ;
@@ -58,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC5C6F27C7     ;                    ;
-; Top-level entity name                                                           ; baseline_c5gx      ; parallel           ;
+; Top-level entity name                                                           ; parallel_tb        ; parallel           ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -155,28 +157,56 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "shiftregister:uut"                                                                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Q0   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Q1   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Q2   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Q3   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Apr 29 14:04:53 2024
+    Info: Processing started: Thu May 02 21:49:43 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off parallel -c parallel
-Info (125069): Default assignment values were changed in the current version of the Quartus Prime software -- changes to default assignments values are contained in file c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file baseline_c5gx.v
     Info (12023): Found entity 1: baseline_c5gx File: C:/Verilog-Projects/4bitparallel-in/baseline_c5gx.v Line: 38
-Error (10170): Verilog HDL syntax error at parallel.v(23) near text: "(";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Verilog-Projects/4bitparallel-in/parallel.v Line: 23
-Error (10170): Verilog HDL syntax error at parallel.v(25) near text: "f2";  expecting "<=", or "=". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Verilog-Projects/4bitparallel-in/parallel.v Line: 25
-Error (10170): Verilog HDL syntax error at parallel.v(27) near text: "f3";  expecting "<=", or "=". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Verilog-Projects/4bitparallel-in/parallel.v Line: 27
-Error (10170): Verilog HDL syntax error at parallel.v(29) near text: "f4";  expecting "<=", or "=". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Verilog-Projects/4bitparallel-in/parallel.v Line: 29
-Error (10112): Ignored design unit "shiftregister" at parallel.v(15) due to previous errors File: C:/Verilog-Projects/4bitparallel-in/parallel.v Line: 15
-Info (12021): Found 0 design units, including 0 entities, in source file parallel.v
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 5 errors, 1 warning
-    Error: Peak virtual memory: 4769 megabytes
-    Error: Processing ended: Mon Apr 29 14:04:59 2024
+Info (12021): Found 1 design units, including 1 entities, in source file parallel_tb.v
+    Info (12023): Found entity 1: parallel_tb File: C:/Verilog-Projects/4bitparallel-in/parallel_tb.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux4.v
+    Info (12023): Found entity 1: mux4 File: C:/Verilog-Projects/4bitparallel-in/mux4.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shiftregister.v
+    Info (12023): Found entity 1: shiftregister File: C:/Verilog-Projects/4bitparallel-in/shiftregister.v Line: 1
+Info (12127): Elaborating entity "parallel_tb" for the top level hierarchy
+Warning (10755): Verilog HDL warning at parallel_tb.v(8): assignments to CLK create a combinational loop File: C:/Verilog-Projects/4bitparallel-in/parallel_tb.v Line: 8
+Warning (10175): Verilog HDL warning at parallel_tb.v(25): ignoring unsupported system task File: C:/Verilog-Projects/4bitparallel-in/parallel_tb.v Line: 25
+Info (12128): Elaborating entity "shiftregister" for hierarchy "shiftregister:uut" File: C:/Verilog-Projects/4bitparallel-in/parallel_tb.v Line: 6
+Info (12128): Elaborating entity "mux4" for hierarchy "shiftregister:uut|mux4:fuu1" File: C:/Verilog-Projects/4bitparallel-in/shiftregister.v Line: 9
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "CLK" is missing source, defaulting to GND File: C:/Verilog-Projects/4bitparallel-in/parallel_tb.v Line: 3
+Error (12061): Can't synthesize current design -- Top partition does not contain any logic
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 5 warnings
+    Error: Peak virtual memory: 4782 megabytes
+    Error: Processing ended: Thu May 02 21:49:49 2024
     Error: Elapsed time: 00:00:06
     Error: Total CPU time (on all processors): 00:00:03
 

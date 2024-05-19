@@ -1,0 +1,61 @@
+|parallel_tb
+
+
+|parallel_tb|shiftregister:uut
+D0 => D0.IN1
+D1 => D1.IN1
+D2 => D2.IN1
+D3 => D3.IN1
+SI => SI.IN2
+SH => SH.IN4
+L => L.IN4
+CLK => Q0~reg0.CLK
+CLK => Q1~reg0.CLK
+CLK => Q2~reg0.CLK
+CLK => Q3~reg0.CLK
+Q0 <= Q0.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= Q1.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= Q2.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= Q3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_tb|shiftregister:uut|mux4:fuu1
+a => Mux0.IN0
+b => Mux0.IN1
+c => Mux0.IN2
+d => Mux0.IN3
+Sh => Mux0.IN4
+L => Mux0.IN5
+out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_tb|shiftregister:uut|mux4:fuu2
+a => Mux0.IN0
+b => Mux0.IN1
+c => Mux0.IN2
+d => Mux0.IN3
+Sh => Mux0.IN4
+L => Mux0.IN5
+out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_tb|shiftregister:uut|mux4:fuu3
+a => Mux0.IN0
+b => Mux0.IN1
+c => Mux0.IN2
+d => Mux0.IN3
+Sh => Mux0.IN4
+L => Mux0.IN5
+out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_tb|shiftregister:uut|mux4:fuu4
+a => Mux0.IN0
+b => Mux0.IN1
+c => Mux0.IN2
+d => Mux0.IN3
+Sh => Mux0.IN4
+L => Mux0.IN5
+out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,44 @@
+module tb;
+
+parameter CLK_PERIOD = 10;
+
+reg clk = 0;
+reg L = 0;
+reg Sh = 0;
+reg SI = 0;
+reg [3:0] D = 0;
+
+wire [3:0] Q;
+
+shiftregister dut (
+    .clk(clk),
+    .L(L),
+    .Sh(Sh),
+    .SI(SI),
+    .D(D),
+    .Q(Q)
+);
+
+always #((CLK_PERIOD)/2) clk = ~clk;
+
+initial begin
+    L = 0;
+    Sh = 0;
+    SI = 0;
+    D = 4'b0000;
+
+    #10 SI = 1;
+    #10 D = 4'b1010;
+    #10 SI = 0;
+
+    #10 Sh = 1;
+    #10 Sh = 0;
+
+    #10 SI = 1;
+    #10 D = 4'b0110;
+    #10 SI = 0;
+
+    #100 $finish;
+end
+
+endmodule

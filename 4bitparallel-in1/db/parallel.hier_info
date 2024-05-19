@@ -1,0 +1,23 @@
+|tb
+
+
+|tb|shiftregister:dut
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+L => Equal0.IN2
+L => Equal1.IN2
+Sh => Equal0.IN3
+Sh => Equal1.IN3
+SI => Selector0.IN3
+D[0] => Selector3.IN3
+D[1] => Selector2.IN3
+D[2] => Selector1.IN3
+D[3] => Selector0.IN4
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

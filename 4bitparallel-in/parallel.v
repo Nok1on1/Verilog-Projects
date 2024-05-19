@@ -1,36 +1,38 @@
-module mux4 (input wire a,b,c,d, 
-				 input Sh, L, 
-				 output out);
+module mux4 (
+    input wire a, b, c, d,
+    input Sh, L,
+    output reg out
+);
 
-	always@* begin
-		case({Sh,L})
-			2'b00 : out = a;
-			2'b01 : out = b;
-			2'b10 : out = c;
-			2'b11 : out = d;
-		endcase
-	end
+    always @* begin
+        case ({Sh, L})
+            2'b00: out = a;
+            2'b01: out = b;
+            2'b10: out = c;
+            2'b11: out = d;
+        endcase
+    end
+
 endmodule
 
 module shiftregister (
     input wire D0, D1, D2, D3,
     input wire SI, SH, L, CLK,
-    output reg Q0, Q1, Q2, Q3, o3,o2,o1,o0
+    output reg Q0, Q1, Q2, Q3
 );
 
-always @* begin
+    wire mux_o0, mux_o1, mux_o2, mux_o3;
 
-mux4 f1(.a(Q3), .b(D3), .c(SI), .d(SI), .Sh(Sh), .L(L), .out(o3));
-Q3 <= o3;
-mux4 f2(.a(Q2), .b(D2), .c(o3), .d(o3), .Sh(Sh), .L(L), .out(o2));
-Q2 <= o2;
-mux4 f3(.a(Q1), .b(D1), .c(o2), .d(o2), .Sh(Sh), .L(L), .out(o1));
-Q1 <= o1;
-mux4 f4(.a(Q0), .b(D0), .c(o1), .d(o1), .Sh(Sh), .L(L), .out(o0));
-Q0 <= o0;
-end
+    mux4 fuu1(.a(Q3), .b(D3), .c(SI), .d(SI), .Sh(SH), .L(L), .out(mux_o3));
+    mux4 fuu2(.a(Q2), .b(D2), .c(mux_o3), .d(mux_o3), .Sh(SH), .L(L), .out(mux_o2));
+    mux4 fuu3(.a(Q1), .b(D1), .c(mux_o2), .d(mux_o2), .Sh(SH), .L(L), .out(mux_o1));
+    mux4 fuu4(.a(Q0), .b(D0), .c(mux_o1), .d(mux_o1), .Sh(SH), .L(L), .out(mux_o0));
+
+    always @ (negedge CLK) begin
+        Q3 <= mux_o3;
+        Q2 <= mux_o2;
+        Q1 <= mux_o1;
+        Q0 <= mux_o0;
+    end
 
 endmodule
-
-
-

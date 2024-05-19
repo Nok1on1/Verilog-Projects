@@ -1,0 +1,7 @@
+module parallel_tb;
+
+    wire D0, D1, D2, D3;
+    wire SI, SH, L, CLK;
+    reg Q0, Q1, Q2, Q3;
+
+parallel uut(D0, D1, D2, D3, SI, SH, L, CLK, Q0, Q1, Q2, Q3);
